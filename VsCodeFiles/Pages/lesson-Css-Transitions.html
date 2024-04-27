@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson Css Transition</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            margin: 250px auto; 
+            /* transition-property:width;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 2s; */
+
+            /* uda line 4n karapu eka eka line eken karanne mehema */
+            transition: all 1s ease 2s;
+
+            /* transcition property kiana ekt denne wenas wena property eka mokadda kiala...ekata all dunnoth api hover ekedi wenas wena hema transition property ekatama transition tika enawa..time duration ek denne kochchcara welawak thulada me change eka wenna ona kiala */
+            /* margin values ganne dila thina piliwelata top right bottom left kiana ewata.. auto dunnama screen size eka anuwa meke margons adjust kara gannawa*/
+        }
+
+        .box:hover{
+            width: 200px;
+            height: 300px;
+            background-color:turquoise;
+        }
+
+        .text{
+           color: black;
+           font-size: 30px;
+           transition: all 1s ease;
+        }
+
+        .text:hover{
+            color: slateblue;
+            font-style: italic;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text"> Hello World !!!</h1>
+    <div class="box">
+    </div>
+  
+</body>
+</html>

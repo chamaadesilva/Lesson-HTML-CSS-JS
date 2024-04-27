@@ -1,0 +1,45 @@
+p{
+    color: darkcyan;
+}
+.paragraph{
+    color: chocolate;
+}
+
+#content{
+    color: crimson;
+}
+
+h4{
+    color:deeppink;
+    /* one element */
+}
+.card-title{
+    color: darkblue;
+    /* one class
+} 
+
+#recipie-card-title{
+    color: forestgreen;
+    /* one id */
+}
+
+div h4{
+    color: coral;
+    /* two elements */
+}
+
+div.card-title{
+    color: darkslateblue;
+
+    /* one element one class */
+}
+div #recipie-card-title{
+    color: gold;
+    /* one element one id-- priority no 1 */
+}
+.card.card-title{
+    color: hotpink;
+}
+#recipie-card-id #recipie-card-title{
+    color: indigo;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h2{
+            color: coral;
+    }
+    #MainHeading{
+        /* Id ekak identify karaganne me # tag eken */
+        color: dodgerblue;
+    }
+    .classSelectorEx{
+
+        /* class ekak identify karaganne . mark eken. */
+        color: goldenrod;
+    }
+
+    input[type="text"]{
+        background-color:aquamarine;
+    }
+
+    input[type="number"]{
+        background-color: cornflowerblue;
+    }
+
+    /* psuedo class Selector */
+
+    button:hover{
+        cursor: pointer;
+        background-color: dimgrey;
+    }
+
+    /* pseudo element selector */
+    p::first-letter{
+        font-size: 30px;
+        font-weight: bold;
+        color: blue;
+    }
+
+
+    div h4{
+        /* space ekakin thamai me element deka combine karanne */
+
+        color: darkmagenta;
+        background-color: darkgray;
+
+    }
+
+    div div h4{
+
+        /* nested div aethule elements select karanne mehema */
+    color: indianred; 
+    background-color: cornsilk;      
+    }
+
+    div > h5{
+    /* child selection eka karanne < me mark eken */
+        color: darkblue;
+        font-weight: bold;
+        font-style: oblique;
+    }
+    /*me page ekema me structure ekenma thawa thawa elements thiye nm a okkotama me styles add wenawa*/
+
+    h2 + p{
+        /* eka laga thina tags connect karanne + use krla.mulin dena element ekata lagama thina deweni element ekt witharai style apply wenne */
+        color: rgb(20, 220, 153);
+        background-color: rgb(83, 83, 83);
+    }
+
+h3 ~ p{
+    background-color: aqua;
+    color: chocolate;
+}
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    <!-- selectors ona wenne internal style and external style wlt witharai..inline ekedi select karanna deyak anethi nisa thamai selectors ekata ona wenne naeththe -->
+
+    ================ 1. Element Selector ================
+
+    <h2>Element Selector</h2>
+
+    ================ 2. ID Selector ================
+
+    <h2 id="MainHeading">ID Selector</h2>
+    <!-- id kianne onama element ekakata thina property ekak -->
+
+    ================ 3. Class Selector ================
+
+    <h2 class="classSelectorEx">Class Selector</h2>
+    <h3 class="classSelectorEx">Class Selector **</h3>
+    <h4 class="classSelectorEx">Class Selector ****</h4>
+
+    ================ 4. Attribute Selector ================
+
+    <br/>
+    <input type="text" placeholder="Enter Your Full Name ">
+    <br/>
+    <br/>
+    <input type="number">
+    <br/>
+
+    ================ 5. Pseudo Classes Selector =================
+    <br/>
+    <button>Click Me</button>
+    <br/>
+    <br>
+
+    ================ 6. Pseudo Elements Selector ================
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellat doloribus ipsum illo voluptatibus vero perferendis blanditiis quia architecto esse sint totam aperiam cumque aliquam nam aut sunt, fuga sequi recusandae obcaecati praesentium! Quasi, laudantium cumque. Error, incidunt molestias vel soluta culpa doloremque repellat praesentium minus est aliquam nihil sunt?</p>
+
+    =============== 7. Descendant Selector(White-Space combinator) ================
+
+    <div>
+        <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nulla iusto cupiditate quis, molestiae expedita illo sunt omnis ad aspernatur magni quos nesciunt id sapiente error? Veritatis, quasi itaque? Est vero, totam omnis quam in facilis vitae non repellendus quibusdam aspernatur ducimus consequuntur nemo distinctio, quia ex. Animi, dignissimos! Suscipit!
+        </h4>
+    <div>
+            <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nulla iusto cupiditate quis, molestiae expedita illo sunt omnis ad aspernatur magni quos nesciunt id sapiente error? Veritatis, quasi itaque? Est vero, totam omnis quam in facilis vitae non repellendus quibusdam aspernatur ducimus consequuntur nemo distinctio, quia ex. Animi, dignissimos! Suscipit!
+            </h4>
+        </div>
+       
+    </div>
+
+    ================ 8. Child Selector (>)================
+
+    <div>
+        <h5>Java</h5>
+        <h5>Python</h5>
+        <h5>Css</h5>
+        <h5>Html</h5>
+    </div>
+    ================ 9. Adjacent sibling Selector (+)================
+
+    <h2>Heading Sibling</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt quasi tenetur at praesentium numquam quia ad eligendi delectus consequuntur saepe nulla in, ipsum asperiores fugit aliquid. Odit doloremque deleniti, itaque culpa cumque est. Nisi tempore quis delectus deserunt repellat veniam pariatur mollitia voluptatibus vitae harum, laborum aliquam voluptate ea.
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt quasi tenetur at praesentium numquam quia ad eligendi delectus consequuntur saepe nulla in, ipsum asperiores fugit aliquid. Odit doloremque deleniti, itaque culpa cumque est. Nisi tempore quis delectus deserunt repellat veniam pariatur mollitia voluptatibus vitae harum, laborum aliquam voluptate ea.
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt quasi tenetur at praesentium numquam quia ad eligendi delectus consequuntur saepe nulla in, ipsum asperiores fugit aliquid. Odit doloremque deleniti, itaque culpa cumque est. Nisi tempore quis delectus deserunt repellat veniam pariatur mollitia voluptatibus vitae harum, laborum aliquam voluptate ea.
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt quasi tenetur at praesentium numquam quia ad eligendi delectus consequuntur saepe nulla in, ipsum asperiores fugit aliquid. Odit doloremque deleniti, itaque culpa cumque est. Nisi tempore quis delectus deserunt repellat veniam pariatur mollitia voluptatibus vitae harum, laborum aliquam voluptate ea.
+    </p>
+
+    ================10.. General sibling Selector (~)================
+    <!-- mekedi mulu page ekem daapu ea elements wlt me style apply wenawa. -->
+    <h2>Heading Genera Sibling</h2>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt quasi tenetur at praesentium numquam quia ad eligendi delectus consequuntur saepe nulla in, ipsum asperiores fugit aliquid. Odit doloremque deleniti, itaque culpa cumque est. Nisi tempore quis delectus deserunt repellat veniam pariatur mollitia voluptatibus vitae harum, laborum aliquam voluptate ea.
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt quasi tenetur at praesentium numquam quia ad eligendi delectus consequuntur saepe nulla in, ipsum asperiores fugit aliquid. Odit doloremque deleniti, itaque culpa cumque est. Nisi tempore quis delectus deserunt repellat veniam pariatur mollitia voluptatibus vitae harum, laborum aliquam voluptate ea.
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt quasi tenetur at praesentium numquam quia ad eligendi delectus consequuntur saepe nulla in, ipsum asperiores fugit aliquid. Odit doloremque deleniti, itaque culpa cumque est. Nisi tempore quis delectus deserunt repellat veniam pariatur mollitia voluptatibus vitae harum, laborum aliquam voluptate ea.
+    </p>
+
+    <h4>last 4 Selectors = CSS combinators</h4>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading wave</title>
+    <style>
+        body{
+            background-color: mediumslateblue;
+        }
+        .container{
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 45%;
+            left: 35%;
+            display: grid;
+            gap: 4px;
+            grid-template-columns: repeat(5, 35%);
+
+        }
+
+        .dot1{
+            position: relative;
+            width: 50px;
+            height:50px;
+            border-radius: 75%;
+            background-color: black;
+        }
+
+       .dot1{
+            animation: up-down 2s linear infinite;
+            
+            
+        }
+        .dot2{
+            position: relative;
+            width: 50px;
+            height:50px;
+            border-radius: 75%;
+            background-color: black;
+        }
+
+       .dot2{
+            animation: up-down 2s linear infinite;
+            animation-delay: 200ms;
+        }
+        .dot3{
+            position: relative;
+            width: 50px;
+            height:50px;
+            border-radius: 75%;
+            background-color: black;
+        }
+
+       .dot3{
+            animation: up-down 2s linear infinite;
+            animation-delay:400ms;
+        }
+        .dot4{
+            position: relative;
+            width: 50px;
+            height:50px;
+            border-radius: 75%;
+            background-color: black;
+        }
+
+       .dot4{
+            animation: up-down 2s linear infinite;
+            animation-delay: 600ms;
+        }
+        .dot5{
+            position: relative;
+            width: 50px;
+            height:50px;
+            border-radius: 75%;
+            background-color: black;
+        }
+
+       .dot5{
+            animation: up-down 2s linear infinite;
+            animation-delay: 800ms;
+            
+        }
+
+        @keyframes up-down {
+            0%{
+                transform: translateY(0);
+            }
+            
+            50%{
+                transform: translateY(-100px);
+            }
+    
+            100%{
+                 transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div  class="dot1"> </div>
+        <div  class="dot2"></div>
+        <div  class="dot3"></div>
+        <div  class="dot4"></div>
+        <div  class="dot5"></div>
+    </div>
+</body>
+</html>

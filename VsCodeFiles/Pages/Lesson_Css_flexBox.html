@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flex Box</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 12px;
+            font-size: 100px;
+            text-align: center;
+            
+        }
+        .b1{
+            background-color: brown;
+        }
+        .b2{
+            background-color:coral;
+        }
+        .b3{
+            background-color:violet;
+        }
+        .b4{
+            background-color:turquoise;
+        }
+        .b5{
+            background-color:steelblue;
+        }
+        .b6{
+            background-color:palevioletred;
+        }
+        .container{
+            display: flex;
+            border: 10px solid black;
+            height: 90vh;
+            flex-direction: column;
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content:center; */
+            /* justify-content: flex-end; */
+            /* justify-content: center;
+            align-items: center; */
+
+            /* justify-content: center; align-items: center;  me dekama use karama elements set eka hari medata ganna puluwan*/
+            /* flex liala witharak dunnoth flex direction eka by default ganne row...flex direction eka column dunnoth siras wenawa..row-reverse eken elements tiks haras athata anthima eke idn thinne...*/
+            /* direction eka row nm main access eka thiras.cross access eka siras ....direction eka column nm main eka thiras..cross eka siras.*/
+            /* justify content wla by default value eka flex start...eka nitharama balanne main access ekath ekka.main access ekath ekka meke behaviour eka wenas wenawa. */
+            /*  main access ek row nm flex start eken page eke mulin patan ganne.flex end eken page eke agin patan ganne */
+            /* justify-content: center;  medata gannawa main access eka row nm */
+            /* space-between wldi screen size ekata ganata adjust wela elements athara spaces denawa gaanata.. */
+            /* space-around elements watenma ida thiya gannawa screen size ekth ekka adjust wela.mekedi page eke ain deken thina space eka adui elements athara space ekt wada. */
+            /* space-evenly waladi around wagema thamai.. wenas wenne watema spaces ekama size wena eken.*/
+        
+            /* align-items: flex-end; */
+            /* align-items: center  dunnama flex direction eka column nm page eke medata gannawa elements tika */
+            /* align-items: flex-end; dunnama flex direction eka column nm page eke left side eken thamai display wenne elements set ela. */
+            /* align-items weda karanne cross access ekata.. */
+            
+            flex-wrap:wrap;
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            align-content: center;
+
+            /* direction eka row nm center  siras athata center wenawa elements set eka..(uda yata)*/
+            /* direction eka column nm center  thiras athata center wenawa elements set eka.. (left right)*/
+            /* align-content: weda karanne cross access ekt.. */
+
+            /* flex wrap ekai align content ekai deka yanne ekata..align content flex start kaloth udama line eke mulinma patan ganne..flex end dunnoth container eke anthima line ekata anthima tika wrap wenna enna..uda line his.. */
+            /* wrap dunnama element eka deepu size ekenma lines keeykt hari aran display wenawa. */
+            /* Nowrap dunnama element tika podi size wela thani line ekakata display wenawa. */
+
+            /* row-gap: 5px;
+            column-gap: 5px;
+         */
+
+         gap: 10px;
+         /* gap dekama ekama nm gap kiana eka dunnama ok */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box b1">A</div>
+    <div class="box b2">B</div>
+    <div class="box b3">C</div>
+    <div class="box b4">D</div>
+    <div class="box b5">E</div>
+    <div class="box b6">F</div>
+    <div class="box b1">A</div>
+    <div class="box b2">B</div>
+    <div class="box b3">C</div>
+    <div class="box b4">D</div>
+    <div class="box b5">E</div>
+    <div class="box b6">F</div>
+    <div class="box b1">A</div>
+    <div class="box b2">B</div>
+    <div class="box b3">C</div>
+    <div class="box b4">D</div>
+    <div class="box b5">E</div>
+    <div class="box b6">F</div>
+    <div class="box b1">A</div>
+    <div class="box b2">B</div>
+    <div class="box b3">C</div>
+    <div class="box b4">D</div>
+    <div class="box b5">E</div>
+    <div class="box b6">F</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise _ 01</title>
+    <style>
+        table{
+            border: 1px solid black;
+            background-color: silver;
+            border-collapse: collapse;
+            
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+    <!--collapse kiana eken borders athara spaces ain wela thani table ekak enawa -->
+</head>
+<body>
+    <table style="width:800px;" >
+        <tr>
+            <td style="width: 200px; border: 1px solid black;" colspan="4"><h4>Personal Informations</h4></td>
+        </tr>
+        <tr>
+            
+            <td style="width: 200px;"> Name :</td>
+            <td colspan="3"><input type="text"></td>
+        
+        </tr>
+
+        <tr>
+            <td style="width: 200px;">Age :</td>
+            <td colspan="3"><input type="number"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Address :</td>
+            <td style="width: 200px;">Street :</td>
+            <td style="width: 200px;" colspan="2"><input type="text"></td>
+        
+        </tr>
+        <tr>
+           
+            <td>City :</td>
+            <td style="width: 200px;" colspan="2"><input type="text"></td>
+           
+        </tr>
+        <tr>
+           
+            <td>Zip Code :</td>
+            <td style="width: 200px;" colspan="2"><input type="number"></td>
+          
+        </tr>
+        <tr>
+            <td colspan="4"><h4>Additional Information</h4></td>
+          
+        </tr>
+        <tr>
+            <td colspan="4"> <textarea name="Additional" id="txtArea" cols="80" rows="10"></textarea></td>
+        
+        </tr>
+    
+        <tr>
+            <td colspan="4"> <button><input type="submit"></button></td>
+           
+        </tr>
+
+    </table>
+   
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 500px 500px 500px; */
+
+            /* grid-template-columns: 50% 30% 20%; */
+            /* palaweni column ekt screen eken 50%, deweni ekt 30%,anthima ekt 20% mekata values px walin dennath pulaam.. */
+
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* mekedi denne fractions 1fr kianne eka column ekai..2fr kianne ethana column dekak set wela kiana eka ..colspan kiana eka simply meka*/
+
+            /* grid-template-columns: repeat(2,1fr); */
+            /* fraction eka 1 wechcha column 2k hadanna kiala me kianne */
+            grid-template-columns: repeat(3, 1fr);
+            /* me columns set eka (1fr 2fr 3fr )deparak repeat wenna kiala kianne meke */
+
+            /* column-gap: 10px;
+            row-gap: 5px; */
+
+            gap: 10px;
+        }
+
+        .container > div{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .nested{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+        .nested > div{
+            text-align: center;
+            border: 1px solid red;
+            padding: 8px;
+        }
+        /* .container > div:nth-child(odd){
+            background-color:turquoise;
+        } */
+        /* psuedo class ekak use kra odd values thina child elements catch kre.. */
+
+    </style>
+</head>
+<body>
+    
+    <!-- layout  kianne page eke thina element set ekak manage karaganna hada gaththa structure ekak.-->
+    <!-- grid layout ekedi api deela thiyena column ganata eke thiyena elements tika manage karagannawa eya.. -->
+
+    <div class="container">
+<div>
+     1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consectetur quis cum voluptatem recusandae saepe vero neque, quam dolores tempora!
+</div>
+<div>
+    2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consectetur quis cum voluptatem recusandae saepe vero neque, quam dolores tempora!
+</div>
+
+<div>
+   3.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consectetur quis cum voluptatem recusandae saepe vero neque, quam dolores tempora!
+</div>
+
+<div>
+   4.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consectetur quis cum voluptatem recusandae saepe vero neque, quam dolores tempora!
+</div>
+
+<div class="nested">
+   <div> ONE </div>
+   <div> TWO</div>
+   <div>THREE</div>
+</div>
+
+<div>
+    6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consectetur quis cum voluptatem recusandae saepe vero neque, quam dolores tempora!
+</div>
+<div>
+    7. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consectetur quis cum voluptatem recusandae saepe vero neque, quam dolores tempora!
+</div>
+<div>
+    8. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consectetur quis cum voluptatem recusandae saepe vero neque, quam dolores tempora!
+</div>
+
+</div>
+</body>
+</html>

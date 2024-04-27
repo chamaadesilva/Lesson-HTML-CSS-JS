@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        button{
+            background-color: greenyellow;
+            color: black;
+        }
+         button:hover{ 
+            /*meka thamai methana psuedo class eka.user interact wena then walata thamai mewa use wenne.. */
+            background-color: green;
+            cursor: pointer;
+            cursor:pointer;
+        }
+
+        button:active{
+            /* button eka click wela thina welawe action eka..psuedo class ekak  */
+            background-color: cadetblue;
+        }
+
+        li:first-child{
+            color: darkmagenta;
+            /* list eke palaweni child element eka = Amuka ..psuedo class*/
+        }
+
+        li:nth-child(3){
+            color: firebrick;
+            /* warahan aethule thiyena anketa samana place eke inna element eka..psuedo class*/
+        }
+
+        li:last-child{
+            color: teal;
+
+            /* anthima child select kara ganne. ..psuedo class---elements wala positions theeranaya karannath use karanawa.*/
+        }
+
+        /* =========pseudo elements========== */
+        p::before{
+
+            /* meka psuedo element ekak..meka identify karaganne :: meken */
+            content: "Read This...";
+            color: palevioletred;
+
+            /* read this kiana eka paragraph ekata kalin concat karanna kiala thamai content eken kiwwe...meka web page eka inspect karala beluwama dom eken me read this ekath ganne wenama element ekak widiyt */
+        }
+
+        p::after{
+            content: "See More...";
+            color:darkblue;
+        }
+
+        p::first-letter{
+            font-size: 30px;
+            color: darkolivegreen;
+
+            /* first letter ekata dena styles */
+        }
+
+        p::first-line{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson Psuedo</h1>
+
+    <h2>====================Psuedo classes====================</h2>
+
+    <button>Click Here</button>
+
+    <ul>
+        <li>Ijse</li>
+        <li>Gdse</li>
+        <li>Cmjd</li>
+        <li>Rwad</li>
+    </ul>
+
+
+
+    <h2>====================Psuedo Elements====================</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et est vitae iusto voluptatem totam, mollitia pariatur aliquam dignissimos quaerat atque officiis. Accusantium delectus doloremque qui ullam dolore error? Accusantium maxime sapiente dolores dignissimos quasi explicabo culpa architecto molestias voluptates ullam eligendi doloribus vitae eaque deleniti, corporis perspiciatis voluptas eius, asperiores inventore? Corporis itaque perferendis laboriosam rerum magni nisi dignissimos veniam minima animi architecto, nulla voluptatibus ipsa labore earum quaerat libero obcaecati, nobis cupiditate dicta ut reprehenderit tenetur! Nihil, tenetur similique! Omnis rerum maxime qui, nemo excepturi aperiam quas blanditiis laborum alias sapiente perferendis temporibus officiis iste, illo quam reiciendis? Facilis impedit, voluptatum porro omnis molestias nihil ullam laboriosam, sint eius qui minus iure voluptatibus magnam animi! Debitis, eveniet natus.</p>
+</body>
+</html>

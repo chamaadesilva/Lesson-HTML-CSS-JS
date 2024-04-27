@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Units</title>
+    <style>
+      .box {
+        background: linear-gradient(to right, green, wheat);
+        border: 1px solid black;
+        height: 100px;
+        margin-top: 8px;
+      }
+      .box-pixels {
+        width: 300px;
+      }
+      .box-percentage {
+        width: 50%;
+      }
+      .container {
+        width: 400px;
+        height: 200px;
+        border: 1px solid black;
+      }
+      .box1 {
+        width: 100px;
+        background-color: yellow;
+        height: 100px;
+      }
+      .box2 {
+        width: 50%;
+        background-color: red;
+        height: 100px;
+      }
+      /* body {
+        width: 400px;
+        border: 1px solid black;
+      } */
+      .box3 {
+        width: 50vw;
+        background-color: blue;
+        height: 100px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-pixels">Pixels</div>
+    <div class="box box-percentage">Percentage</div>
+    <hr style="color: blue" />
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+    <hr />
+    <div class="box3">View Port Width</div>
+    <hr /> 
+    <!-- ====== rem ======= <br />
+    ====== Gets the default root font-size ====== <br />
+    ====== By-default its 16px in the browser ===== <br />
+    ====== Settings -> Appearance -> Font size -> Customize fonts <br />
+    <div style="font-size: 1rem">Hello World!!!</div>
+    <div style="font-size: 2rem">Hello World!!!</div>
+    <div style="font-size: 3rem">Hello World!!!</div>
+    <div style="font-size: 4rem">Hello World!!!</div>
+
+    ====== em =========<br />
+
+    <div style="font-size: 10px">
+      <div style="font-size: 1em">Hello World!!!</div>
+      <div style="font-size: 2em">Hello World!!!</div>
+      <div style="font-size: 3em">Hello World!!!</div>
+      <div style="font-size: 4em">Hello World!!!</div>
+      <div style="font-size: 5em">Hello World!!!</div>
+    </div>
+  </body>
+</html>

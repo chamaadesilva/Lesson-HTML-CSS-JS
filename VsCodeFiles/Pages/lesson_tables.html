@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        table{
+            border: 1px solid black;
+           /* width: 500px;
+            height: 100px;*/
+        }
+        th{
+            border: 1px solid red;
+            background-color: blanchedalmond;
+           
+        }
+        td{
+            border: 1px solid blue;    
+        }
+        tfoot{
+            background-color: rgb(127, 255, 249);
+        }
+    
+    </style>
+    <!--th and td dekema borders CSS walin dunne -->
+</head>
+<body>
+    <table style="border: 1px solid black"><!--border kiana eken thamai border line eka enne-->
+        <!--table ekak hadana tag eka..eke head ekata,body ekata,foot ekata wenama tag thunak thiyenawa.-->
+        <thead>
+            <!--table row---row ekakata data denakota me tag eka use karala thamai denne..oonama row ekakata ehema thamai-->
+            <tr>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Contact Number</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+             <!--Table data -- data define karanna use karanne-->
+                <td>Jhon</td>
+                <td>loggie</td>
+                <td>beard</td>
+                <td>woshington</td>
+                <td>89234567123</td>
+            </tr>
+            <tr>
+                <td>Dholton</td>
+                <td>Dewmini</td>
+                <td>Sooriyarachchi</td>
+                <td>galle</td>
+                <td>0762590356</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+        <p>  </p>
+        <p> </p>
+
+    <table>
+        <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Book</td>
+                <td>10</td>
+                <td>2000.00</td>
+            </tr>
+
+            <tr>
+                <td>Chocolate</td>
+                <td>2</td>
+                <td>500.00</td>
+            </tr>
+
+            <tr>
+                <td>Pen</td>
+                <td>10</td>
+                <td>200.00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+            <td colspan="2">Total</td>
+            <td>2700.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p> </p>
+    <p> </p>
+
+
+    <!--======== Table Colspan ========-->
+
+    <h1>======== Table Colspan ========</h1>
+
+    <table style = "width: 400px; text-align: center; background-color: violet;">
+            <tr style = "height: 100px;">
+                <td colspan = "2"> 1</td>
+                
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr style = "height: 100px;">
+                <td>5</td>
+                <td colspan="3">6</td>
+               
+            </tr>
+            <tr style = "height: 100px;">
+                <td>9</td>
+                <td colspan="2">10</td>
+               
+                <td>12</td>
+            </tr>
+            <tr style = "height: 100px;">
+                <td colspan="3">13</td>
+               
+                <td>16</td>
+            </tr>
+    </table>
+
+    <p></p>
+    <p></p>
+
+    <!--======== Table Rowspan ========-->
+
+    <h1>======== Table Rowspan ========</h1>
+
+    <table style = "width: 400px; text-align: center; background-color: aquamarine;">
+        <tr style = "height: 100px;">
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+         <tr style = "height: 100px;">
+           
+            <td rowspan="3">6</td>
+            <td>7</td>
+            <td rowspan="3">8</td>
+        </tr>
+
+        <tr style = "height: 100px;">
+            <td rowspan="2">9</td>
+            <td>11</td>
+        
+        </tr>
+
+        <tr style = "height: 100px;">
+            <td>15</td>
+        
+        </tr>
+    </table>
+</body>
+</html>

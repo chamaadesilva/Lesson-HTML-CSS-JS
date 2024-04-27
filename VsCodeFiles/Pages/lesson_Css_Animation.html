@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <style>
+        .box{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left: 100px;
+            top: 100px;         
+            background-color:  tomato;
+            animation-name: mover;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+            /* unlimited loop wenna infinity */
+        }
+
+        @keyframes mover {
+            0%{
+                left: 100px;
+            top: 100px;  
+            background-color: teal;
+            
+            }
+            
+            25%{
+                left: 600px;
+            top: 100px;  
+            background-color: peru;
+            border-radius: 10%;
+            }
+
+            50%{
+                left: 600px;
+            top: 600px;  
+            background-color: navy;
+            border-radius: 30%;
+            }
+
+            75%{
+                left: 100px;
+            top: 600px;  
+            background-color: hotpink;
+                border-radius: 40%;
+        }
+
+            100%{
+                left: 100px;    
+            top: 100px; 
+            border-radius: 60%;
+            }
+        }
+
+        .box1{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left: 100px;
+            top: 100px;         
+            background-color:  tomato;
+            animation-name: square;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes square {
+            0%{
+                left: 100px;
+            top: 100px;  
+            background-color: teal;
+            
+            }
+            
+            25%{
+                left: 600px;
+            top: 100px;  
+            background-color: peru;
+            border-radius: 10%;
+            transform: scale(2);
+            }
+
+            50%{
+                left: 600px;
+            top: 600px;  
+            background-color: navy;
+            border-radius: 30%;
+            transform: scale(3);
+            }
+
+            75%{
+                left: 100px;
+            top: 600px;  
+            background-color: hotpink;
+                border-radius: 40%;
+                transform: scale(2);
+        }
+
+            100%{
+                left: 100px;    
+            top: 100px; 
+            border-radius: 60%;
+            transform: scale(1);
+            }
+            
+        }
+
+
+        .box2{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left: 100px;
+            top: 100px;         
+            background-color:  tomato;
+            /* animation-name: up-down;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+
+            animation: up-down 3s linear infinite;
+        }
+
+        @keyframes up-down {
+            0%{
+                transform: translateY(0);
+            }
+            
+            50%{
+                transform: translateY(-32px);
+            }
+            100%{
+                transform: translateY(32px);
+            }
+        }
+        /*% mark eken dunnama colours keepayak denna puluwan*/
+        /*from -me value eke idan,...to- me value ekt change wenna */
+        /*  api daana animations apply wenna nm me @keyframe eka use krala animation rules tikak hadanna ona..
+        me key rule eka me animation ekt kila adura ganne me identifier eken..eka thamai methanadi square kianne.*/
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+    <!-- <div class="box1"></div> -->
+    <div class="box2"></div>
+</body>
+</html>

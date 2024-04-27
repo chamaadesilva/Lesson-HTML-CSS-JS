@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Css Grid</title>
+    <style>
+        .Box{
+            background-color:violet ;
+            padding: 16px;
+            border: 1px solid black;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+             gap: 10px; 
+        }
+        .b1{
+            grid-column: 1/3; 
+            /* mekath colspan wage ekak  columns merge wenawa..habai 1/3 dunnama 1i 2i thamai merge wenne..a kianne eya 1,2,3 kiala ganne border lines count karala...a wagema cells merge unaata eelaga cells tikath thiyenawa..ain wenne nae.merge patan agnna cell ekt thawath a wagem cells ganak merge wenawa eitharai mekedi.*/
+       
+       grid-row: 1/3;
+        }
+
+        .b6{
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="Box b1">Box 1</div>
+        <div class="Box b2">Box 2</div>
+        <div class="Box b3">Box 3</div>
+        <div class="Box b4">Box 4</div>
+        <div class="Box b5">Box 5</div>
+        <div class="Box b6">Box 6</div>
+        <!-- <div class="Box">Box 7</div>
+        <div class="Box">Box 8</div> -->
+
+
+    </div>
+</body>
+</html>
